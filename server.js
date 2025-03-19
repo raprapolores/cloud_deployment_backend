@@ -16,6 +16,8 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/books', bookRoutes);
+app.get('/api/auth', authRoutes);
+app.get('/api/books', bookRoutes);
 
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
