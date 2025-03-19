@@ -16,7 +16,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/books', bookRoutes);
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 // Route for the home page (default route)
 app.get('/', (req, res) => {
