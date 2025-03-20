@@ -10,7 +10,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://cloud-app-b4haceamhabcb2gt.canadacentral-01.azurewebsites.net'
+  origin: 'http://localhost:3000'
 }));
 app.use(express.json());
 
