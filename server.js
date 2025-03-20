@@ -10,7 +10,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://delightful-bay-060decb10.6.azurestaticapps.net'
+  origin: 'http://localhost:3000'
 }));
 app.use(express.json());
 
